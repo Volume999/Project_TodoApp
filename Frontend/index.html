@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello!</title>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Import JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="nav-wrapper indigo">
+            <div class="container">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger" style="display: inline-block;">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <div class="input-field left s10">
+                        <i class="material-icons prefix">search</i>
+                        <input type="text" placeholder="Search" class="validate" style="color: white;">
+                    </div>
+                    <a href="#"><i class="right material-icons">add</i></a>
+                    <a href="#"><i class="right material-icons">notifications</i></a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="slide-out">
+        <a class="sidenav-close" href="#!">
+            <i class="right small material-icons black-text">close</i>
+        </a>
+        <li>
+            <i class="material-icons left">inbox</i>
+            <span>Inbox</span>
+        </li>
+        <li>
+            <i class="material-icons left">done</i>
+            <span>Done</span>
+        </li>
+    </ul>
+
+    <div class="container">
+        <h4 class="red-text">Inbox</h4>
+        <p>
+            <input type="checkbox" id="check"> 
+            <span>Helo</span>
+            <hr class="divider grey text-lighten-2">
+        </p>
+        <button class="btn-small grey">
+            <span class="black-text">
+                <i class="material-icons left">add</i>
+                Add Task
+            </span>
+        </button>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+</html>

@@ -36,7 +36,6 @@ go.work
 .DS_Store
 .parcel-cache
 tailwind.config.js
-index.html
 yarn.lock
 yarn-error.log
 types/generated/*.d.ts
