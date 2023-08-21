@@ -53,8 +53,8 @@
     <div class="container">
         <h4 class="red-text">Inbox</h4>
         <p>
-            <input type="checkbox" id="check"> 
-            <span>Helo</span>
+            <input type="checkbox" id="check">
+            <span style="width: 100%;"><a class="waves-effect modal-trigger black-text" href="#task_details" style="width: 100%;">hello</a></span>
             <hr class="divider grey text-lighten-2">
         </p>
         <button class="btn-small grey">
@@ -64,9 +64,19 @@
             </span>
         </button>
     </div>
+
+    <div id="task_details" class="modal">
+        <div class="modal-content">
+            <h4>Task Details</h4>
+            <p>hello</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
     <script>
         $(document).ready(function(){
             $('.sidenav').sidenav();
+            $('.modal').modal();
         });
     </script>
 </body>
